@@ -58,11 +58,6 @@ body {
     margin: 5em 0;
 }
 
-.lista_item {
-    font-size: 25px;
-    color: var(--verde-militar);
-}
-
 .materias_item li{
     display: flex;
     flex-direction: column;
