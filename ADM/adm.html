@@ -4,56 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="adm.css">
+    <link rel="stylesheet" href="css/adm.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Administração</title>
 </head>
 
 <body>
     <header>
-
+        <nav>
+            <img src="img/img-logoadm.jpg" alt="Logo do curso de Administração" class="logo">
+            <div class="links">
+                <a href="#" class="cursos">Cursos</a>
+                <a href="#">Home</a>
+            </div>
+        </nav>
     </header>
     <main>
-        <section>
-            <h1 class="titulo-principal">Administração</h1>
-            <p class="descricao">Um curso profissionalizante voltado ao conhecimento de administração, onde os alunos
-                podem seguir carreira e futuramente realizar um curso superior nessa área.</p>
-        </section>
-        <section>
-            <video src=""></video>
-        </section>
-        <section>
-            <div class="fotos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+        <section id="inicio">
+            <div>
+                <div class="container" data-aos="fade-down" data-aos-duration="1000">
+                    <h1 class="titulo-principal">Administração</h1>
+                    <p class="descricao">Um curso profissionalizante voltado ao conhecimento de administração, onde os
+                        alunos
+                        podem seguir carreira e futuramente realizar um curso superior nessa área.</p>
+                    <p class="descricao">É uma curso que prepara o estudante para atuar em diversas áreas da gestão, com
+                        competências como liderança, capacidade de tomar decisões e gerir pessoas e recursos.</p>
+                </div>
             </div>
+            <a href="#video-apresentacao" class="link-inicio" data-aos="fade-up" data-aos-duration="1000">Saiba mais!</a>
         </section>
-        <section>
-            <h1 class="materias">Matérias</h1>
-            <ul class="lista">
-                <li class="itens-lista">
-                    Administração Básica
-                    administração Pública
-                    Àreas de atuação
-                </li>
-                <li class="itens-lista">
-                    Administração na Prática
-                    Administração Empresarial
-                    Administração Comercial
-                </li>
-                <li class="itens-lista">
-                    Projetos Administrativos
-                    Feiras
-                </li>
-            </ul>
+        <section id="video-apresentacao" class="container" data-aos="fade-right" data-aos-duration="1400">
+            <iframe width="80%" height="500" src="https://www.youtube.com/embed/jmjZ9hBAK7o?si=7mujODfowXbb8bHM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="integrantes">
+            <h1 class="titulo-secundario" data-aos="fade-up" data-aos-duration="1000">Em breve teremos fotos de alguns alunos do curso de Administração.</h1>
+            <div class="container">
+                <img src="img/img-pessoasadm.jpg" class="img-embreve"
+                    alt="Uma imagem de vários pessoas com um ponto de interrogação, pessoas desconhecidas." data-aos="fade-up-right" data-aos-duration="1000">
+            </div>
+            <p class="aviso">*Esse curso estará disponível somente em 2025.</p>
+        </section>
+        <section id="materiais">
+            <h1 class="titulo-secundario" data-aos="fade-left" data-aos-duration="1000">Matérias</h1>
+            <div class="itens">
+                <div data-aos="fade-up-right" data-aos-duration="1500">
+                    <h1 class="titulo-terciario">1º ano</h1>
+                    <p>Fundamentos da Administração;</p>
+                    <p>Contabilidade;</p>
+                    <p>Marketing.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1600">
+                    <h1 class="titulo-terciario">2º ano</h1>
+                    <p>Gestão de Projetos;</p>
+                    <p>Empreendedorismo;</p>
+                    <p>Ética e Responsabilidade Social.</p>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="1700">
+                    <h1 class="titulo-terciario">3º ano</h1>
+                    <p>Finanças;</p>
+                    <p>Recursos Humanos;</p>
+                    <p>Tecnologia.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div>
+            <p>&copy; Todos os direitos reservados.</p>
+            <p>2º Desenvolvimento de Sistemas - 2024</p>
+        </div>
     </footer>
 
-    <script src="aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>
