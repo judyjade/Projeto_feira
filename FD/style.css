@@ -63,11 +63,12 @@ body {
     color: var(--verde-militar);
 }
 
-.materias_item h1{
+.materias_item li{
     display: flex;
     flex-direction: column;
     border-left: 2px solid var(--cor5);
     border-right: 2px solid var(--cor5);
+    justify-content: left;
 }
 
 .rodape_lista {
