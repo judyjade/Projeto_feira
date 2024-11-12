@@ -18,7 +18,6 @@
 body {
     background-color: var(--amarelo-fraco);
     font-family: var(--fonte-texto);
-    width: 100%;
 }
 
 a {
