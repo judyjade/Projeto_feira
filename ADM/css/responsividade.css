@@ -8,7 +8,11 @@
         font-size: 20px;
         margin-right: 7px;
         margin-left: 2px;
-        transition: ease-out 3s all;
+        transition: ease-out 0.5s all;
+    }
+
+    nav a:hover {
+        font-size: 24px;
     }
 
     .logo {
@@ -16,7 +20,7 @@
         margin: 10px;
     }
 
-    #inicio, #integrantes {
+    .inicio, .integrantes {
         padding: 0.5px;
     }
 
@@ -50,8 +54,9 @@
     }
 
     .titulo-secundario {
-        font-size: 38px;
-        margin: 80px 30px;
+        font-size: 34px;
+        margin: 80px 0;
+        align-items: center;
     }
 
     .aviso {
@@ -59,7 +64,7 @@
         margin-bottom: 25px;
     }
 
-    #materiais {
+    .materias {
         margin: 0;
     }
 

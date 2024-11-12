@@ -15,6 +15,13 @@
     --fonte-texto: "Playfair Display", serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
 body {
     background-color: var(--amarelo-fraco);
     font-family: var(--fonte-texto);
@@ -57,7 +64,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-#inicio, #integrantes {
+.inicio, .integrantes {
     text-align: center;
     background-color: var(--cor-texto);
     padding: 50px;
@@ -86,12 +93,13 @@ nav a:hover {
     border-radius: 15px;
     border-style: double;
     color: white;
-    transition: ease-in-out 0.5s all;
+    transition: ease-in-out 2s all;
 }
 
 .link-inicio:hover {
     font-size: 35px;
     background-color: var(--amarelo-forte);
+    transition: 4s all;
 }
 
 .img-embreve {
@@ -110,7 +118,7 @@ nav a:hover {
     font-size: 13px;
 }
 
-#materiais {
+.materias {
     margin: 20px 0 20px 50px;
     padding: 50px 10px;
 }
