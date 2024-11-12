@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: rgb(255, 255, 255);
+    --cor2: #f1e4f3ff;
+    --cor3: #f4bbd3ff;
+    --cor4: #f686bdff;
+    --cor5: #fe5d9fff;
+    --fonte-titulo: "Bona Nova SC", serif;
+    --fonte-texto: "Playfair Display", serif;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-texto);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 28px;
+}
+
+li {
+    list-style: none;
+}
+
+nav, footer {
+    background-color: var(--cor5);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: ease-out 0.3s all;
+}
+
+nav a:hover {
+    font-size: 30px;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+#inicio, #integrantes {
+    text-align: center;
+    background-color: var(--cor-texto);
+    padding: 50px;
+}
+
+.container {
+    text-align: center;
+    margin: 70px;
+    margin-top: 130px;
+}
+
+.titulo-principal {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+}
+
+.descricao {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.link-inicio {
+    background-color: var(--amarelo);
+    margin-top: 20px;
+    padding: 20px 100px;
+    border-radius: 15px;
+    border-style: double;
+    color: white;
+    transition: ease-in-out 0.5s all;
+}
+
+.link-inicio:hover {
+    font-size: 35px;
+    background-color: var(--amarelo-forte);
+}
+
+.img-embreve {
+    width: 40%;
+    margin-top: -70px;
+}
+
+.titulo-secundario {
+    font-size: 33px;
+    font-family: var(--fonte-titulo);
+    margin: 50px 0;
+}
+
+.aviso {
+    color: rgb(77, 76, 76);
+    font-size: 13px;
+}
+
+#materiais {
+    margin: 20px 0 20px 50px;
+    padding: 50px 10px;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.itens p {
+    font-size: 25px;
+}
+
+.titulo-terciario {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+footer {
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 580px;
+}
