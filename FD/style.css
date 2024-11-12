@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
@@ -11,86 +11,132 @@
     --cor3: #f4bbd3ff;
     --cor4: #f686bdff;
     --cor5: #fe5d9fff;
-    --fonte-titulo: "Crimson Text", serif;
-    --fonte-texto: "Roboto Condensed", sans-serif;
+    --fonte-titulo: "Bona Nova SC", serif;
+    --fonte-texto: "Playfair Display", serif;
 }
 
 body {
     background-color: var(--cor2);
     font-family: var(--fonte-texto);
-    font-size: 16px;
+    width: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 28px;
+}
 
-.cabecalho {
+li {
+    list-style: none;
+}
+
+nav, footer {
     background-color: var(--cor5);
     display: flex;
     justify-content: space-between;
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
     align-items: center;
-    padding: 12px;
 }
 
-.principal{
-    text-align: center;
-    margin-top: 2em;
+nav a {
+    font-size: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: ease-out 0.3s all;
 }
 
-.principal-capa_texto{
-    margin-top: 1em;
-}
-
-.materias {
-    text-align: center;
-    margin-top: 120px;
-}
-
-.materias_titulo {
-    font-family: var(--fonte-titulo);
+nav a:hover {
     font-size: 30px;
-    color: var(--preto);
-    text-shadow: 3px 3px 5px var(--verde-folha);
 }
 
-.materias_lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 5em 0;
+.logo {
+    width: 140px;
+    margin-left: 100px;
+    border-radius: 10px;
 }
 
-.materias_item li{
-    display: flex;
-    flex-direction: column;
-    border-left: 2px solid var(--cor5);
-    border-right: 2px solid var(--cor5);
-    justify-content: left;
-}
-
-.rodape_lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
-}
-
-.rodape_texto {
-    margin: 0;
-    color: var(--cor1);
-    font-size: 15px;
-}
-
-.rodape_logo {
-    width: 10%;
-    border-radius: 100%;
-}
-
-.rodape {
+#inicio, #integrantes {
     text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    gap: 24px;
-    background-color: var(--cor5);
-    background-repeat: no-repeat;
-    margin-left: 0;
-    padding: 24px 12px;
+    background-color: var(--cor-texto);
+    padding: 50px;
+}
+
+.container {
+    text-align: center;
+    margin: 70px;
+    margin-top: 130px;
+}
+
+.titulo-principal {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+}
+
+.descricao {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.link-inicio {
+    background-color: var(--amarelo);
+    margin-top: 20px;
+    padding: 20px 100px;
+    border-radius: 15px;
+    border-style: double;
+    color: white;
+    transition: ease-in-out 0.5s all;
+}
+
+.link-inicio:hover {
+    font-size: 35px;
+    background-color: var(--amarelo-forte);
+}
+
+.img-embreve {
+    width: 40%;
+    margin-top: -70px;
+}
+
+.titulo-secundario {
+    font-size: 33px;
+    font-family: var(--fonte-titulo);
+    margin: 50px 0;
+}
+
+.aviso {
+    color: rgb(77, 76, 76);
+    font-size: 13px;
+}
+
+#materiais {
+    margin: 20px 0 20px 50px;
+    padding: 50px 10px;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.itens p {
+    font-size: 25px;
+}
+
+.titulo-terciario {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+footer {
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 580px;
 }

@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formação de Docentes</title>
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>Formação de Docentes</title>
 </head>
+
 <body>
-    <header class="cabecalho">
-        <img src="#" alt="Logo do Curso" class="cabecalho-img">
-        <nav class="cabecalho-nav">
-            <a class="cabecalho-nav">Formação Docente</a>
+    <header>
+        <nav>
+            <img src="ADM/img/img-logoadm.jpg" alt="Logo do curso de Formação de Docentes" class="logo">
+            <div class="links">
+                <a href="#" class="cursos">Cursos</a>
+                <a href="#">Home</a>
+            </div>
         </nav>
     </header>
-    <main class="principal">
-        <section class="principal-capa">
-            <div class="principal-capa_combotao">
-                <div class="principal-capa_conteudo">
-                    <h1 class="principal-capa_titulo">Formação de Docentes</h1>
-                    <p class="principal-capa_texto">O curso de Formação de Docentes abrange uma série de disciplinas relacionadas à educação, incluindo tópicos como desenvolvimento infantil e pré-escolar, teoria da educação, administração escolar, avaliação de alunos, planejamento de aula, ensino de línguas, informática e tecnologia educacional.</p>
+    <main>
+        <section id="inicio">
+            <div>
+                <div class="container" data-aos="fade-down" data-aos-duration="1000">
+                    <h1 class="titulo-principal">Formaçaõ de Docentes</h1>
+                    <p class="descricao">O curso de Formação de Docentes abrange uma série de disciplinas relacionadas à educação, incluindo tópicos como desenvolvimento infantil e pré-escolar, teoria da educação, administração escolar, avaliação de alunos, planejamento de aula, ensino de línguas, informática e tecnologia educacional.</p>
                 </div>
             </div>
-            <section class="materias">
-                <h2 class="materias_titulo">Grade de disciplinas (1º, 2º e 3º série):</h2>
-                <ul class="materias_lista">
-                    <li>
-                        <img src="#" alt="">
-                        <h3 class="lista_item">1º série</h3>
-                        <ul class="materias_item">
-                            <li>Habilidades Socioemocionais</li>
-                            <li>Fundamentos Históricos Sociológicos</li>
-                            <li>Filosóficos da Educação e Concepção</li>
-                            <li>Norteadoras da Educação Especial</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="#" alt="">
-                        <h3 class="lista_item">2º série</h3>
-                        <ul class="materias_item">
-                            <li>Literalmente Infantil</li>
-                            <li>Alfabetização e Letramento</li>
-                            <li>Metodologia do Ensino da Matemática</li>
-                            <li>Organização do Trabalho Pedagógico - OTP</li>
-                            <li>Fundamentos Psicológicos da Educação - FPE</li>
-                            <li>Fundamentos Históricos e Metodológicos da Educação Infantil - FHMEI</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <img src="img/celular.svg" alt="">
-                        <h3 class="lista_item">3º série</h3>
-                        <ul class="materias_item">
-                            <li>Metodologia do Ensino da Educação Física</li>
-                            <li>Metodologia do Ensino do Português</li>
-                            <li>Metodologia do Ensino das Ciências</li>
-                            <li>Metodologia do Ensino da História e Geografia</li>
-                            <li>Metodologia do Ensino do Ensino da Matemática</li>
-                            <li>Tecnologias Educacionais e Metodológicas Ativas - TEMA</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer class="rodape"> 
-            <img src="img1/imgfd1.jpeg" alt="" class="rodape_logo">
-            <ul class="rodape_lista">
-                <li class="lista_link">
-                    <a href=""> Volte ao início </a>
-                </li>
-            </ul>
-            <p class="rodape_texto"> 2024 CCM Tancredo de Almeida Neves, todos os direitos reservados </p>
-        </footer>
-            <img class="principal-capa_imagem" src="#" alt="">
+            <a href="#video-apresentacao" class="link-inicio" data-aos="fade-up" data-aos-duration="1000">Saiba mais!</a>
         </section>
+        <section id="video-apresentacao" class="container" data-aos="fade-right" data-aos-duration="1400">
+            <iframe width="80%" height="500" src="https://www.youtube.com/embed/jmjZ9hBAK7o?si=7mujODfowXbb8bHM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="integrantes">
+            <h1 class="titulo-secundario" data-aos="fade-up" data-aos-duration="1000">Em breve teremos fotos de alguns alunos do curso de Administração.</h1>
+            <div class="container">
+                <img src="ADM/img/img-pessoasadm.jpg" class="img-embreve"
+                    alt="Uma imagem de vários pessoas com um ponto de interrogação, pessoas desconhecidas." data-aos="fade-up-right" data-aos-duration="1000">
+            </div>
+        </section>
+        <section id="materiais">
+            <h1 class="titulo-secundario" data-aos="fade-left" data-aos-duration="1000">Matérias</h1>
+            <div class="itens">
+                <div data-aos="fade-up-right" data-aos-duration="1500">
+                    <h1 class="titulo-terciario">1º ano</h1>
+                    <p>Habilidades Socioemocionais</p>
+                    <p>Fundamentos Históricos Sociológicos</p>
+                    <p>Filosóficos da Educação e Concepção</p>
+                    <p>Norteadoras da Educação Especial</p>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="1600">
+                    <h1 class="titulo-terciario">2º ano</h1>
+                    <p>Literalmente Infantil</p>
+                    <p>Alfabetização e Letramento</p>
+                    <p>Metodologia do Ensino da Matemática</p>
+                    <p>Organização do Trabalho Pedagógico - OTP</p>
+                    <p>Fundamentos Psicológicos da Educação - FPE</p>
+                    <p>Fundamentos Históricos e Metodológicos da Educação Infantil - FHMEI</p>
+                </div>
+                <div data-aos="fade-up-left" data-aos-duration="1700">
+                    <h1 class="titulo-terciario">3º ano</h1>
+                    <p>Metodologia do Ensino da Educação Física</p>
+                    <p>Metodologia do Ensino do Português</p>
+                    <p>Metodologia do Ensino das Ciências</p>
+                    <p>Metodologia do Ensino da História e Geografia</p>
+                    <p>Metodologia do Ensino do Ensino da Matemática</p>
+                    <p>Tecnologias Educacionais e Metodológicas Ativas - TEMA</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; Todos os direitos reservados.</p>
+            <p>2º Desenvolvimento de Sistemas - 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
 </body>
+
 </html>
