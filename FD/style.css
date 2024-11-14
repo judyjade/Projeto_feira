@@ -15,6 +15,13 @@
     --fonte-texto: "Playfair Display", serif;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--cor2);
     font-family: var(--fonte-texto);
@@ -70,6 +77,14 @@ nav a:hover {
     margin-top: 130px;
 }
 
+.container-video{
+    background-color: var(--cor4);
+    text-align: center;
+    margin: none;
+    margin-top: 130px;
+    padding: 5em;
+}
+
 .titulo-principal {
     font-family: var(--fonte-titulo);
     font-size: 40px;
@@ -81,18 +96,18 @@ nav a:hover {
 }
 
 .link-inicio {
-    background-color: var(--amarelo);
     margin-top: 20px;
     padding: 20px 100px;
     border-radius: 15px;
     border-style: double;
     color: white;
     transition: ease-in-out 0.5s all;
+    background-color: var(--cor4);
 }
 
 .link-inicio:hover {
     font-size: 35px;
-    background-color: var(--amarelo-forte);
+    background-color: var(--cor5);
 }
 
 .img-embreve {
@@ -103,7 +118,7 @@ nav a:hover {
 .titulo-secundario {
     font-size: 33px;
     font-family: var(--fonte-titulo);
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .aviso {
@@ -112,8 +127,9 @@ nav a:hover {
 }
 
 #materiais {
-    margin: 20px 0 20px 50px;
-    padding: 50px 10px;
+    margin: 0;
+    padding: 20px 10px;
+    background-color: var(--cor4);
 }
 
 .itens {
@@ -121,6 +137,8 @@ nav a:hover {
     grid-template-columns: 1.5fr 1.5fr 1.5fr;
     text-align: center;
     margin-bottom: 40px;
+    padding: 40px;
+    margin-right: 30px;
 }
 
 .itens p {
@@ -134,9 +152,6 @@ nav a:hover {
 
 footer {
     border-radius: 10px 10px 0 0;
+    text-align: center;
 }
 
-footer p {
-    text-align: center;
-    margin-left: 580px;
-}
