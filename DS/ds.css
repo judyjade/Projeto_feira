@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+        --azul-escuro: #03045eff;
+        --azul-escurinho: #023e8aff;
+        --azul-azul: #0077b6ff;
+        --azul-zinho: #0096c7ff;
+        --azul-claro: #00b4d8ff;
+        --azul-claro-claro: #48cae4ff;
+        --azul-clarinho: #90e0efff;
+        --azul-clarissimo: #ade8f4ff;
+        --preto: rgb(0, 0, 0);
+        --fonte-titulo: "Bona Nova SC", serif;
+        --fonte-texto: "Playfair Display", serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    background-color: var(--azul-claro-claro);
+    font-family: var(--fonte-texto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 28px;
+}
+
+li {
+    list-style: none;
+}
+
+nav, footer {
+    background-color: var(--azul-clarissimo);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+nav a {
+    font-size: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: ease-out 0.3s all;
+}
+
+nav a:hover {
+    font-size: 30px;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+.inicio, .integrantes {
+    text-align: center;
+    background-color: var(--azul-zinho);
+    padding: 50px;
+}
+
+.container {
+    text-align: center;
+    margin: 70px;
+    margin-top: 130px;
+}
+
+.titulo-principal {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+}
+
+.descricao {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.link-inicio {
+    background-color: var(--preto);
+    margin-top: 20px;
+    padding: 20px 100px;
+    border-radius: 15px;
+    border-style: double;
+    color: white;
+    transition: ease-in-out 2s all;
+}
+
+.link-inicio:hover {
+    font-size: 35px;
+    background-color: var(--azul-escurinho);
+    transition: 4s all;
+}
+
+.img-embreve {
+    width: 40%;
+    margin-top: -70px;
+}
+
+.titulo-secundario {
+    font-size: 33px;
+    font-family: var(--fonte-titulo);
+    margin: 50px 0;
+}
+
+.aviso {
+    color: rgb(77, 76, 76);
+    font-size: 13px;
+}
+
+.materias {
+    margin: 20px 0 20px 50px;
+    padding: 50px 10px;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.itens p {
+    font-size: 25px;
+}
+
+.titulo-terciario {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+footer {
+    border-radius: 10px 10px 0 0;
+}
+
+footer p {
+    text-align: center;
+    margin-left: 580px;
+}
