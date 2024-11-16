@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: rgb(255, 255, 255);
+    --cor2: #f1e4f3ff;
+    --cor3: #f4bbd3ff;
+    --cor4: #f686bdff;
+    --cor5: #fe5d9fff;
+    --fonte-titulo: "Bona Nova SC", serif;
+    --fonte-texto: "Playfair Display", serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--cor2);
+    font-family: var(--fonte-texto);
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 28px;
+}
+
+li {
+    list-style: none;
+}
+
+.cabecalho, footer {
+    background-color: var(--cor5);
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border-radius: 0 0 10px 10px;
+    align-items: center;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+    margin-right: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: ease-out 0.3s all;
+    cursor: pointer;
+}
+
+.botao:hover {
+    font-size: 30px;
+}
+
+#menu {
+    display: none;
+}
+
+nav {
+    background-color: var(--cor4);
+    position: absolute;
+    top: 120px;
+    right: 220px;
+    width: 30%;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    border: solid var(--cor3);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.botao-menu {
+    display: flex;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.botao-menu:hover {
+    background-color: var(--cor5);
+    border-radius: 10px;
+}
+
+.logo {
+    width: 140px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+
+#inicio, #integrantes {
+    text-align: center;
+    background-color: var(--cor-texto);
+    padding: 50px;
+}
+
+#integrantes {
+    padding: 60px 0;
+}
+
+.container {
+    text-align: center;
+    margin: 70px;
+    margin-top: 130px;
+}
+
+.container-video{
+    background-color: var(--cor4);
+    text-align: center;
+    padding-top: 7em;
+}
+
+iframe {
+    margin: 30px;
+}
+
+.titulo-principal {
+    font-family: var(--fonte-titulo);
+    font-size: 40px;
+}
+
+.descricao {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.link-inicio {
+    margin-top: 20px;
+    padding: 20px 100px;
+    border-radius: 15px;
+    border-style: double;
+    color: white;
+    transition: ease-in-out 0.5s all;
+    background-color: var(--cor4);
+}
+
+.link-inicio:hover {
+    font-size: 35px;
+    background-color: var(--cor5);
+}
+
+.container-slide {
+    width: 100vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 3em 0;
+}
+
+.paginas-slide {
+    display: inline-block;
+    animation: anima 45s linear infinite;
+}
+
+.paginas-slide img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.titulo-secundario {
+    font-size: 33px;
+    font-family: var(--fonte-titulo);
+    margin: 20px 10px;
+}
+
+.aviso {
+    color: rgb(77, 76, 76);
+    font-size: 13px;
+}
+
+#materiais {
+    margin: 0;
+    padding: 20px 10px;
+    background-color: var(--cor4);
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px;
+    margin-right: 30px;
+}
+
+.itens p {
+    font-size: 25px;
+}
+
+.titulo-terciario {
+    font-size: 37px;
+    margin-bottom: 30px;
+}
+
+footer {
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    justify-content: center;
+}
