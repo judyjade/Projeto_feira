@@ -12,7 +12,7 @@
         --azul-zinho: #0096c7ff;
         --azul-claro: #00b4d8ff;
         --azul-claro-claro: #48cae4ff;
-        --azul-clarinho: #90e0efff;
+        --azul-clarinho: rgb(81, 88, 125);
         --azul-clarissimo: #ade8f4ff;
         --preto: rgb(0, 0, 0);
         --fonte-titulo: "Bona Nova SC", serif;
@@ -42,7 +42,7 @@ li {
 }
 
 .cabecalho, footer {
-    background-color: var(--amarelo);
+    background-color: var(--azul-clarissimo);
     display: flex;
     justify-content: space-between;
     padding: 2em;
@@ -128,7 +128,7 @@ li {
 }
 
 .titulo-principal {
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
     font-size: 40px;
 }
 
@@ -207,10 +207,10 @@ li {
 }
 
 .titulo-terciario {
-    font-size: 37px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-texto);
 }
-
 footer {
     border-radius: 10px 10px 0 0;
     text-align: center;
