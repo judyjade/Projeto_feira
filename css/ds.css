@@ -162,12 +162,17 @@ li {
 
 .paginas-slide {
     display: inline-block;
-    animation: anima 45s linear infinite;
+    animation: anima 20s linear infinite;
 }
 
 .paginas-slide img {
-    width: 250px;
+    width: 28%;
     border-radius: 15px;
+}
+
+.img-rotativo {
+    width: 500px;
+    height: 285px;
 }
 
 @keyframes anima {
